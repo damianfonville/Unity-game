@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="http://www.threeships.nl" 
+           xmlns="http://www.threeships.nl" 
+           elementFormDefault="qualified">
+  <!-- ** Attribute Extensions ** -->
+  <xs:attribute name = "rscType">
+    <xs:simpleType>
+      <xs:restriction base = "xs:string">
+        <xs:enumeration value = "ts_silverpoint_v1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <!-- ** Elements ** -->
+  <xs:element name="PACKAGE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="INFO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HOSTIP" type="xs:string" />
+              <xs:element name="XCASVERSION" type="xs:string" minOccurs="0" />
+              <xs:element name="CPID" type="xs:positiveInteger" />
+              <xs:element name="CPVID" type="xs:positiveInteger" />
+              <xs:element name="DEFAULTRESOURCE" type="xs:string" minOccurs="0" />
+              <xs:element name="DEFAULTRESOURCEPATH" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FILES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FILE" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="xs:positiveInteger" />
+                    <xs:element name="NAME" type="xs:string" />
+                    <xs:element name="PATH" type="xs:string" />
+                    <xs:element name="FILESIZE" type="xs:integer" />
+                    <xs:element name="LINKEDID" type="xs:integer" minOccurs="0"/>
+                    <xs:element name="REDIRECTURL" type="xs:string" minOccurs="0"/>
+                    <xs:element name="FILETYPE" type="xs:integer" />
+                    <xs:element name="LINKEDRSC" type="xs:string" minOccurs="0"/>
+                    <xs:element name="RESOLVEDPATH" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

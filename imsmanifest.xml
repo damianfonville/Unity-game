@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="IMSMANIFEST" version="1.1" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd http://www.threeships.nl xcasManifest.xsd">
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.1</schemaversion>
+  </metadata>
+  <organizations />
+  <resources>
+    <resource identifier="res_default" type="webcontent" href="game.html">
+      <file href="game.html" />
+      <file href="game.unity3d" />
+    </resource>
+  </resources>
+  <PACKAGE xmlns="http://www.threeships.nl">
+    <INFO>
+      <HOSTIP>10.22.2.33</HOSTIP>
+      <XCASVERSION>5.0.1.50</XCASVERSION>
+      <CPID>2544661</CPID>
+      <CPVID>4178735</CPVID>
+      <DEFAULTRESOURCE>res_default</DEFAULTRESOURCE>
+      <DEFAULTRESOURCEPATH>/game.html</DEFAULTRESOURCEPATH>
+    </INFO>
+    <FILES>
+      <FILE>
+        <ID>10466142</ID>
+        <NAME>game.html</NAME>
+        <PATH></PATH>
+        <FILESIZE>3481</FILESIZE>
+        <FILETYPE>1</FILETYPE>
+      </FILE>
+      <FILE>
+        <ID>10466143</ID>
+        <NAME>game.unity3d</NAME>
+        <PATH></PATH>
+        <FILESIZE>16604661</FILESIZE>
+        <FILETYPE>1</FILETYPE>
+      </FILE>
+    </FILES>
+  </PACKAGE>
+</manifest>
